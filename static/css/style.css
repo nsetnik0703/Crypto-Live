@@ -17,3 +17,19 @@ body {
     .Button:active {
     background: #144E75; }
 
+  .navbar {
+    background-color: #144E75;
+  }
+
+ #color1 {
+    background-color: #144E75;
+}
+#color2 {
+  background-color: #FFEC8B;
+}
+#color3 {
+  background-color: #72A0C1;
+}
+#color4 {
+  background-color: #000000;
+}
