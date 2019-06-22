@@ -9,11 +9,11 @@ def index():
 
 @app.route("/explore")
 def explore():
-    return render_template('index.html')
+    return render_template('explore.html')
     
 @app.route("/history")
 def history():
-    return render_template('index.html')
+    return render_template('history.html')
 
 
 if __name__ == "__main__":
