@@ -1,16 +1,39 @@
 
 {% extends "base.html" %}
 {% block content %}
-    <h1>Select Currency to Plot</h1>
-    <!-- create select here -->
-    <select id="selDataset" onchange="optionChanged(this.value)">
-        
-    </select>
-    <div id="scatter"></div>
+<br>
+<br>
 
+<div class="container" style="background: #ffffff;">
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <h3>Historical CryptoCurrency DashBoard</h3>
+            <!-- create select here -->
+            <p>Select Currency:<select id="selDataset" onchange="optionChanged(this.value)"></select></p>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-md-12">
+            <h4>About</h4>
+            <div id="about">
+            <!-- create introduction here -->
+            </div>
+            <small>Source: <a href="https://info.binance.com/" target="_blank">binance.com</a></small>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="scatter"></div>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
 
-   
     <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
 
 {% endblock content %}
