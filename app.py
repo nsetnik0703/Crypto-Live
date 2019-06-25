@@ -28,6 +28,10 @@ def explore():
 def history():
     return render_template('history.html')
 
+@app.route("/comparison")
+def comparison():
+    return render_template('comparison.html')
+
 @app.route("/BTC")
 def names():
     """Return a list of CURRENCY names."""
