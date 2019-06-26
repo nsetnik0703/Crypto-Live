@@ -51,6 +51,9 @@ function buildCharts(correctedCurrency) {
             },
 
             yaxis: {
+                title: {
+                    text: 'Price (USD)'
+                },
                 autorange: true,
                 type: "linear"
             }
