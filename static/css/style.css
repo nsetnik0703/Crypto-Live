@@ -35,6 +35,10 @@ body {
     height: 100%;
   }
 
+  p, h4, h6, small {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0px;
+  }
   
   .Button {
     color: rgb(224, 192, 104); 
@@ -123,4 +127,35 @@ body {
 
 .HOLDER {
    background: black;
+}
+
+.fab {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  transition: transform 0.2s;
+}
+
+.fab:hover {
+  transform: scale(1.2);
+}
+
+.footer-link:hover {
+  text-decoration: none !important;
+}
+
+.history-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #144E75;
+}
+
+.history-link:hover {
+  text-decoration: none !important;
+  color: #72A0C1;
+}
+.footer-text {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
