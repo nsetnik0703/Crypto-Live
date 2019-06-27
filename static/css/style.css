@@ -22,7 +22,7 @@ html * {
 }
 
 body {
-    padding: 0;
+  padding-top: 65px;
     margin: 0;
     background: #D0E4F5 url("https://images4.alphacoders.com/888/888105.jpg") 
     no-repeat center center fixed;
@@ -31,7 +31,7 @@ body {
   
   #map,
   body,
-  html {
+  html, header {
     height: 100%;
   }
 
@@ -139,6 +139,10 @@ body {
   transform: scale(1.2);
 }
 
+.fa-bars {
+  color: #ffffff;
+}
+
 .footer-link:hover {
   text-decoration: none !important;
 }
@@ -159,3 +163,27 @@ body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
+
+.nav-link {
+  color: #ffffff !important;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+.nav-link:hover {
+  color: #72A0C1 !important;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: #ffffff;
+
+}
+
+.navbar-brand:hover {
+  color: #72A0C1 !important;
+}
+

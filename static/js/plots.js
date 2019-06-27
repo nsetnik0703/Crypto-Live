@@ -69,6 +69,7 @@ function buildCharts(correctedCurrency) {
 
     var selectDiv = d3.select("#about").html('');
     var newText = document.createElement("p");
+    newText.style.color = "#fff";
 
     if (selectPanel == "XRP") {
         newText.appendChild(document.createTextNode(`Ripple also called XRP coin is traded throughout many different cryptocurrency exchanges and is one of the top traded coins now. Ripple was initially launched in 2012 and is already a revenue producing company with over 100 financial situations and banks on its blockchain network, including JP Morgan and Bank of America. The Ripple network is an open payment network for digital currency as well as a holding company. Ripple aims to create and enable a global network of financial institutions and banks to use Ripple software to lower cost of international payments. Ripple calls this global network the "Internet of Value" and operates on the XRP ledger which is an open source product created by Ripple. Ripple allows a secured and cheap way to move money around in a very fast and cheap way for business and for people.`));
