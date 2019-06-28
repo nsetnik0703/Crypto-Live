@@ -4,33 +4,43 @@
 <br>
 <br>
 
-<div class="container" style="background: rgba(255,255,255,.6);">
+<div class="container" style="background: transparent;">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
             <br>
-            <h3>Historical CryptoCurrency DashBoard</h3>
+            
+            <h3 style="color: white; text-align: center;">Historical CryptoCurrency Prices</h3>
+            
             <!-- create select here -->
-            <p>Select Currency:<select id="selDataset" onchange="optionChanged(this.value)"></select></p>
+            <p style="color: white; text-align: center;">Select Currency: <select id="selDataset" onchange="optionChanged(this.value)"></select></p>
+           
+                <div id="about">
+                <!-- create introduction here -->
+                </div>
+        
         </div>
-    </div>
+        <div class="col-md-6">
 
-    <div class="row">
-        <div class="col-md-12">
-            <h4>About</h4>
-            <div id="about">
-            <!-- create introduction here -->
+        </div>
+    </div>
+    <br>
+    <div class="container" style="background: rgba(255,255,255); border: 6px solid #144E75;">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <div id="scatter"></div>
             </div>
-            <small>Source: <a href="https://info.binance.com/" target="_blank">binance.com</a></small>
         </div>
     </div>
     <br>
-    <br>
-    <div class="row">
-        <div class="col-md-12">
-            <div id="scatter"></div>
-        </div>
+    <div class="container" style="background: transparent;">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-secondary btn-sm" href="https://info.binance.com/" target="_blank" role="button">BTC Source</a>
+                <a class="btn btn-secondary btn-sm" href="https://www.kaggle.com/philmohun/cryptocurrency-financial-data" target="_blank" role="button">Data Source</a>
+            </div>
+        </div>     
     </div>
-</div>
     <br>
     <br>
 
