@@ -1,50 +1,93 @@
-// Create the Traces
+// key: trace1=ETHBTC , trace2=EOSBTC , trace3=BCCBTC , trace4=BNBBTC
+// trace5=LTCBTC , trace6=XRPBTC
+// 
+var data = {"items":[
+{"symbol":"ETHBTC", "price": 0.001234, "crypto_timestamp": "2019-06-26T23:34:04"},
+{"symbol":"EOSBTC", "price": 0.005303, "crypto_timestamp": "2019-06-26T23:34:04"},
+{"symbol":"BCCBTC", "price": 0.014932, "crypto_timestamp": "2019-06-26T23:34:04"},
+{"symbol":"BNBBTC", "price": 0.023421, "crypto_timestamp": "2019-06-26T23:34:04"},
+{"symbol":"LTCBTC", "price": 0.045653, "crypto_timestamp": "2019-06-26T23:34:04"},
+{"symbol":"XRPBTC", "price": 0.073211, "crypto_timestamp": "2019-06-26T23:34:04"},
+{"symbol":"ETHBTC", "price": 0.005555, "crypto_timestamp": "2019-06-29T23:34:04"},
+{"symbol":"EOSBTC", "price": 0.003453, "crypto_timestamp": "2019-06-29T23:34:04"},
+{"symbol":"BCCBTC", "price": 0.014564, "crypto_timestamp": "2019-06-29T23:34:04"},
+{"symbol":"BNBBTC", "price": 0.010203, "crypto_timestamp": "2019-06-29T23:34:04"},
+{"symbol":"LTCBTC", "price": 0.058542, "crypto_timestamp": "2019-06-29T23:34:04"},
+{"symbol":"XRPBTC", "price": 0.011241, "crypto_timestamp": "2019-06-29T23:34:04"}
+]};
+
+var response = data.items;
+var traceerror = [];
+
+
+var filter1 = response.filter(response => response.symbol == "ETHBTC");
+var price1 = filter1.map(row => row.price);
+var date = filter1.map(row => row.crypto_timestamp)
+console.log(price1);
+
+var filter2 = response.filter(response => response.symbol == "EOSBTC");
+var price2 = filter2.map(row => row.price);
+console.log(price2);
+
+var filter3 = response.filter(response => response.symbol == "BCCBTC");
+var price3 = filter3.map(row => row.price);
+console.log(price3);
+
+var filter4 = response.filter(response => response.symbol == "BNBBTC");
+var price4 = filter4.map(row => row.price);
+console.log(price4);
+
+var filter5 = response.filter(response => response.symbol == "LTCBTC");
+var price5 = filter5.map(row => row.price);
+console.log(price5);
+
+var filter6 = response.filter(response => response.symbol == "XRPBTC");
+var price6 = filter6.map(row => row.price);
+console.log(price6);
+
 var trace1 = {
-    x: data.year,
-    y: data.high_jump,
-    mode: "markers",
-    type: "scatter",
-    name: "high jump",
-    marker: {
-      color: "#2077b4",
-      symbol: "hexagram"
-    }
-  };
-  
-  var trace2 = {
-    x: data.year,
-    y: data.discus_throw,
-    mode: "markers",
-    type: "scatter",
-    name: "discus throw",
-    marker: {
-      color: "orange",
-      symbol: "diamond-x"
-    }
-  };
-  
-  var trace3 = {
-    x: data.year,
-    y: data.long_jump,
-    mode: "markers",
-    type: "scatter",
-    name: "long jump",
-    marker: {
-      color: "rgba(156, 165, 196, 1.0)",
-      symbol: "cross"
-    }
-  };
-  
-  // Create the data array for the plot
-  var data = [trace1, trace2, trace3];
-  
-  // Define the plot layout
-  var layout = {
-    title: "Olympic trends over the years",
-    xaxis: { title: "Year" },
-    yaxis: { title: "Olympic Event" }
-  };
-  
-  // Plot the chart to a div tag with id "plot"
-  Plotly.newPlot("plot", data, layout);
-  
+  x: date,
+  y: price1,
+  type: "scatter",
+  mode: "lines",
+  name: "ETHBTC"
+}
+var trace2 = {
+  x: date,
+  y: price2,
+  type: "scatter",
+  mode: "lines",
+  name: "EOSBTC"
+}
+var trace3 = {
+  x: date,
+  y: price3,
+  type: "scatter",
+  mode: "lines",
+  name: "BCCBTC"
+}
+var trace4 = {
+  x: date,
+  y: price4,
+  type: "scatter",
+  mode: "lines",
+  name: "BNBBTC"
+}
+var trace5 = {
+  x: date,
+  y: price5,
+  type: "scatter",
+  mode: "lines",
+  name: "LTCBTC"
+}
+var trace6 = {
+  x: date,
+  y: price6,
+  type: "scatter",
+  mode: "lines",
+  name: "XRPBTC"
+}
+
+var plotdata = [trace1, trace2, trace3, trace4, trace5, trace6];
+
+Plotly.newPlot("linePlot", plotdata)

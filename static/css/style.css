@@ -22,8 +22,8 @@ html * {
 }
 
 body {
-    padding: 0;
-    margin: 0;
+    padding: 10;
+    margin: 10;
     background: #D0E4F5 url("https://images4.alphacoders.com/888/888105.jpg") 
     no-repeat center center fixed;
     background-size: cover;
@@ -102,7 +102,20 @@ body {
       .card-text:hover {
         color: red;
       }
-  
+
+#linePlot{
+        background-image: url("https://images4.alphacoders.com/888/888105.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        transition: 1s ease-out;
+}
+
+/* .main-svg{
+  background: rgba(255, 255, 255, .5);
+} */
+
+
 #footnote{
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 16px;

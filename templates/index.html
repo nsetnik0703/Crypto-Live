@@ -1,17 +1,20 @@
 
 {% extends "base.html" %}
 {% block content %}
+
+
+
 <row>
   <div class="card-deck">
       <div class="card text-center">
         <div class="card-body">
           <h5 class="card-title">ETH (Ether)</h5>
-          <p class="card-text">Latin Latin Latin</p>
+          <p id="ETHBTC" class="card-text">Latin Latin Latin</p>
         </div>
       </div>
       <div class="card text-center">
         <div class="card-body">
-          <h5 class="card-title">XRP (Ripple)</h5>
+          <h5 id="" class="card-title">XRP (Ripple)</h5>
           <p class="card-text">Latin Latin Latin</p>
         </div>
       </div>
@@ -47,16 +50,20 @@
         </div>
       </row>
   <row>
-    <div class="card">
-      <div class="card-body" id="line-plot">
-        text
+    <div class="container">
+      <row>
+        <div class="col-md-12">
+      <div id="linePlot">
       </div>
+    </div>
+    </row>
+
     </div>
   </row>
   <row>
-      <p id="timestamp">(timestamp_update)</p>
+      <p id="timestamp">(timestamp text)</p>
   </row>
 
-  <script src="{{ url_for('static', filename='js/liveplots.js') }}"></script>
+  <script src="static/js/liveplots.js"></script>
 
 {% endblock content %}
