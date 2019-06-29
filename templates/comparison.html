@@ -22,7 +22,6 @@
 
     <!-- Our CSS -->
         <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-        <link rel="stylesheet" type="text/css" href="/static/css/comparison.css">
 <!-- Libraries -->
     <!-- d3 JS -->
         <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -86,27 +85,52 @@
           </form>
         </div>
       </nav>
-<p style="font-size:400%;">Less correlated Currencies</p>
-<div id=history>
-    <h2 >MAKER</h2>
-    <div class="coinmarketcap-currency-widget" data-currencyid="1518" data-base="USD"  data-secondary="BTC" style="width: 20%; height: 10%; margin: auto;padding: 10px;"></div>
-    <h2>Bitcoin-sv</h2>
-    <div class="coinmarketcap-currency-widget" data-currencyid="3602" data-base="USD"  data-secondary="BTC" style="width: 20%; height: 10%; margin: auto;padding: 10px;"></div>
-    <h2>Crypto.com Chain</h2>
-    <div class="coinmarketcap-currency-widget" data-currencyid="3635" data-base="USD"  data-secondary="BTC" style="width: 20%; height: 10%; margin: auto;padding: 10px;"></div>
-</div>
-<div id=correlation>
-<h2>Bitcoin correlation</h2>
-<img src="{{ url_for('static', filename='png/bitcoinCorrelation.png') }}" alt="User Image" style="width: 80%; height: 50%; margin: auto;padding: 10px;"></div>
+      <!-- navbar end -->
+<div class="card-deck" style="background: transparent; padding: 20px" >
+  <div class="card">
+    <div class="card-body">
+    <div class="coinmarketcap-currency-widget" data-currencyid="1518" data-base="USD"  data-secondary="BTC" style="width: 30%; height: 10%;margin: 10px;padding: 10px;"></div>
+    <br>
+    <div><h5 class="card-title">MAKER</h5>
+      <p class="card-text">description</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <div class="coinmarketcap-currency-widget" data-currencyid="3602" data-base="USD"  data-secondary="BTC" style="width: 30%; height: 10%;margin: 10px;padding: 10px;"></div>
+      <br>
+      <div><h5 class="card-title">Bitcoin-sv</h5>
+        <p class="card-text">description</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
+    </div>
+  </div>
+  <div class="card">
+      <div class="card-body">
+        <div class="coinmarketcap-currency-widget" data-currencyid="3635" data-base="USD"  data-secondary="BTC" style="width: 30%; height: 10%;margin: 10px;padding: 10px;"></div>
+        <div><h5 class="card-title">Crypto.com Chain</h5>
+          <p class="card-text">description</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
+      </div>
+  </div>
+  </div>
 
-<div id=whole_history>
-    <h1>1 year Bitcoin Chart(USD/BTC)</h1></div>
-    <div id="plot"></div>
-    </select>
-    <!-- <p style="font-size:400%;">Click the Line!</p> -->
+<!-- bootsstrap carddeck end -->
+  <div class="container" style="background: transparent;padding: 50px;">
+       <p style="color: white; font-size:300%;">Less correlated Currencies</p>
+      <div id=correlation>
+        <h2 style="color: white;">Bitcoin correlation</h2>
+        <img src="{{ url_for('static', filename='png/bitcoinCorrelation.png') }}" alt="User Image" style="width: 80%; height: 50%;padding: 10px ;">
+      </div>
+       <br>
+          <div id=whole_history>
+          <h1 style="color: white;">1 year Bitcoin Chart(USD/BTC)</h1>
+          </div>
+          <div id="plot" style="width: 80%;"></div>
+          <script src="{{ url_for('static', filename='js/comparison_plotly.js') }}"></script>
+      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+  </div>
 </div>
-<script src="{{ url_for('static', filename='js/comparison_plotly.js') }}"></script>
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
 </body>
 
 <footer>
