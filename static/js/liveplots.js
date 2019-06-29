@@ -1,6 +1,11 @@
 // key: trace1=ETHBTC , trace2=EOSBTC , trace3=BCCBTC , trace4=BNBBTC
 // trace5=LTCBTC , trace6=XRPBTC
 // 
+
+var dt = new Date();
+document.getElementById("timestamp").innerHTML = dt.toLocaleTimeString();
+
+
 var data = {"items":[
 {"symbol":"ETHBTC", "price": 0.001234, "crypto_timestamp": "2019-06-26T23:34:04"},
 {"symbol":"EOSBTC", "price": 0.005303, "crypto_timestamp": "2019-06-26T23:34:04"},
@@ -8,12 +13,6 @@ var data = {"items":[
 {"symbol":"BNBBTC", "price": 0.023421, "crypto_timestamp": "2019-06-26T23:34:04"},
 {"symbol":"LTCBTC", "price": 0.045653, "crypto_timestamp": "2019-06-26T23:34:04"},
 {"symbol":"XRPBTC", "price": 0.073211, "crypto_timestamp": "2019-06-26T23:34:04"},
-{"symbol":"ETHBTC", "price": 0.005555, "crypto_timestamp": "2019-06-29T23:34:04"},
-{"symbol":"EOSBTC", "price": 0.003453, "crypto_timestamp": "2019-06-29T23:34:04"},
-{"symbol":"BCCBTC", "price": 0.014564, "crypto_timestamp": "2019-06-29T23:34:04"},
-{"symbol":"BNBBTC", "price": 0.010203, "crypto_timestamp": "2019-06-29T23:34:04"},
-{"symbol":"LTCBTC", "price": 0.058542, "crypto_timestamp": "2019-06-29T23:34:04"},
-{"symbol":"XRPBTC", "price": 0.011241, "crypto_timestamp": "2019-06-29T23:34:04"}
 ]};
 
 var response = data.items;
@@ -91,3 +90,15 @@ var trace6 = {
 var plotdata = [trace1, trace2, trace3, trace4, trace5, trace6];
 
 Plotly.newPlot("linePlot", plotdata)
+
+// appending prices to cards
+
+document.getElementById("ETH-price").innerHTML = price1;
+document.getElementById("EOS-price").innerHTML = price2;
+document.getElementById("BCC-price").innerHTML = price3;
+document.getElementById("BNB-price").innerHTML = price4;
+document.getElementById("LTC-price").innerHTML = price5;
+document.getElementById("XRP-price").innerHTML = price6;
+
+
+// /appending prices to cards

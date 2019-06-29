@@ -89,7 +89,7 @@ body {
         transition: 1s ease-out;
     }
       .card-body:hover{
-        background-image: url("https://media3.s-nbcnews.com/j/newscms/2019_06/2746941/190208-stock-money-fanned-out-ew-317p_fa445b2f6f3e86a3ffa18707e6a8adcb.fit-760w.jpg");
+        background-image: url("https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg");
       }
 
     .card-title {
@@ -97,14 +97,14 @@ body {
       color: #144E75;
     }
       .card-title:hover{
-        color: red;
+        color: black;
       }
 
     .card-text {
       color: #72A0C1;
     }
       .card-text:hover {
-        color: red;
+        color: white;
       }
 
 #linePlot{
@@ -200,3 +200,21 @@ body {
   color: #72A0C1 !important;
 }
 
+#ETH-price,
+#EOS-price,
+#BCC-price,
+#BNB-price,
+#LTC-price,
+#XRP-price {
+  color: red;
+  font-size: 18pt;
+}
+
+
+
+
+#ETH:hover {
+  background-image:url("https://res.cloudinary.com/mokens/image/upload/v1535822435/teziuc3yt7yvorne9rc2.jpg");
+  background-size: 150px;
+  background-repeat: no-repeat;
+}

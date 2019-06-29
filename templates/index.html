@@ -10,7 +10,7 @@
       <br>
       <h3 style="color:white;">Discovering Associations In The CryptoCurrency Ecosytem</h3>
       <br>
-      <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </p>
+      <p style="color: white;">This web application serves as a convenient portal by which anyone can explore the valuation of the top six market-valued cryptocurrencies. On the present page, we provide their exchange rates relative to bitcoin (captured at the time the page loaded). In the 'Explore' page, users can select two cryptocurrencies and two datetimes, and our app will automatically generate descriptive statistics and Pearson correlations within those specifications. In the 'History' page, we provide USD valuations and descriptive summaries of each of these cryptocurrencies. In the 'Comparison' page, we provide the USD valuation of bitcoin itself.</p>
     </div>
     <div class="col-md-6">
       
@@ -26,21 +26,21 @@
  <row>
     <div class="card-deck">
         <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">ETH (Ether)</h5>
-            <p class="card-text">Latin Latin Latin</p>
+          <div class="card-body" id="ETH">
+            <h5 class="card-title">Ethereum (ETH)</h5>
+            <p class="card-text"><span id="ETH-price"></span></p>
           </div>
         </div>
         <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">XRP (Ripple)</h5>
-            <p class="card-text">Latin Latin Latin</p>
+          <div class="card-body" id="EOS">
+            <h5 class="card-title">EOS <br> (EOS)</h5>
+            <p class="card-text"><span id="EOS-price"></span></p>
           </div>
         </div>
         <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">LTC (litecoin)</h5>
-            <p class="card-text"> Latin Latin Latin </p>
+          <div class="card-body" id="BCC">
+            <h5 class="card-title">Bitcoin Cash (BCC)</h5>
+            <p class="card-text"><span id="BCC-price"></span></p>
           </div>
         </div>
       </div>
@@ -49,21 +49,21 @@
     <row>
         <div class="card-deck">
             <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">BCC (Bitcoin Cash)</h5>
-                <p class="card-text">Latin Latin Latin</p>
+              <div class="card-body" id="BNB">
+                <h5 class="card-title">Binance Coin (BNB)</h5>
+                <p class="card-text"><span id="BNB-price"></span></p>
               </div>
             </div>
             <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">EOS (Eos)</h5>
-                <p class="card-text">Latin Latin Latin</p>
+              <div class="card-body" id="LTC">
+                <h5 class="card-title">Litecoin (LTC)</h5>
+                <p class="card-text"><span id="LTC-price"></span></p>
               </div>
             </div>
             <div class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">BNB (Binance Coin)</h5>
-                <p class="card-text"> Latin Latin Latin </p>
+              <div class="card-body" id="XRP">
+                <h5 class="card-title">Ripple (XRP)</h5>
+                <p class="card-text"><span id="XRP-price"></span></p>
               </div>
             </div>
           </div>
@@ -71,16 +71,17 @@
         <br>
     <row>
       <div class="card">
-        <div class="card-body" id="line-plot">
-          text
+        <div class="card-body" id="linePlot">
         </div>
       </div>
     </row>
     
-    <br>
+<br>
     <row>
-        <p id="timestamp">(timestamp_update)</p>
+  <container>
+      <p style="font-style:italic; color:white;">Last updated:  <span id="timestamp"></span></p>
     </row>
+  </container>
 </div>
 
 
