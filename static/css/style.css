@@ -80,7 +80,6 @@ body {
   text-transform: none;
   text-align: center;
 }
-
     .card-body {
         background-image: url("https://images4.alphacoders.com/888/888105.jpg");
         background-size: cover;
@@ -89,7 +88,7 @@ body {
         transition: 1s ease-out;
     }
       .card-body:hover{
-        background-image: url("https://i.ytimg.com/vi/eq7Adzo4QAE/maxresdefault.jpg");
+        background-image: url("https://yt3.ggpht.com/a/AGF-l79StRyDW9A-TohGZhSpmio2pwh8zQX-d5HNOQ=s900-mo-c-c0xffffffff-rj-k-no");
       }
 
     .card-title {
@@ -206,9 +205,22 @@ body {
 #BNB-price,
 #LTC-price,
 #XRP-price {
-  color: red;
-  font-size: 18pt;
+  color: #144E75;
+  font-size: 20pt;
+  transition: .1s;
 }
+
+#ETH-price:hover,
+#EOS-price:hover,
+#BCC-price:hover,
+#BNB-price:hover,
+#LTC-price:hover,
+#XRP-price:hover {
+  color: #72A0C1;
+  font-size: 21pt;
+  transition: .1s;
+}
+
 
 
 
