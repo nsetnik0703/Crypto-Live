@@ -102,3 +102,10 @@ document.getElementById("XRP-price").innerHTML = price6;
 
 
 // /appending prices to cards
+
+
+// d3 card animations
+
+
+
+// /d3 card animations
