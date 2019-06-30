@@ -1,36 +1,36 @@
-"Crypto-Live"
-Members:
-Nick Setnik
-Donish Cushing
-Naoko Okada
-Priya R.
-Ying Li
+# "Crypto-Live"
 
-Synopsis: An app that allows users to explore trends and correlations between the exchange rates of several cryptocurrencies relative to bitcoin, including historical data, and the option to query a custom-built live feed.
+
+### Members: 
+Nick Setnik, Donish Cushing, Naoko Okada, Priya R., Ying Li
+
+### Synopsis: 
+An app that allows users to explore trends and correlations between the exchange rates of several cryptocurrencies relative to bitcoin, including historical data, and the option to query a custom-built live feed.
 
 When you visit crypto-live, you are presented with an expansive data feed that displays relevant exchange rates in real time. Here you can look for trends in the market as it changes every miniute and over the previous years.
+
 But the real magic is found on the next page, where you can request data from a specific time frame between 2 crypto exchanges, and the app will automatically generate visual data based on these parameters. This is useful in discovering relevant shared trends and reveal possible connections.
+
 In the last comparison page, we prepared a bitcoin correletion data for the real "promising" investers, where you can see 3 less corrlated currencies and their trends.
+
 We designed this app with the intention of discovering patterns in trends in the sporadic and seemingly unpredictable realm of cryptocurrency and presenting these patterns in a visibly informative way.
 
-Kaggle - https://www.kaggle.com/philmohun/cryptocurrency-financial-data
-Binance – https://www.binance.com/en
-Coin Market Cap - https://coinmarketcap.com/ (Only for minor cryptocurrencies)
+1. Kaggle - https://www.kaggle.com/philmohun/cryptocurrency-financial-data
+2. Binance – https://www.binance.com/en
+3. Coin Market Cap - https://coinmarketcap.com/ (Only for minor cryptocurrencies)
+
 GitHub - https://github.com/nsetnik0703/Crypto-Live
 
-Current crypto currencies:
-ETH (Ether)
-XRP (Ripple)
-LTC (litecoin)
-BCC (Bitcoin Cash)
-EOS (Eos)
-BNB (Binance Coin)
-And three minor cryptocurrencies. 
+### Current crypto currencies:
 
-Database:
-AWS RDS https://aws.amazon.com/rds/
-AWS EC2 https://aws.amazon.com/ec2/
-Local sqlite file (for 1 year history)
+ETH (Ether),XRP (Ripple),LTC (litecoin),BCC (Bitcoin Cash),EOS (Eos),BNB (Binance Coin),and three minor cryptocurrencies. 
 
-Inspiration:
+### Database:
+1. AWS RDS https://aws.amazon.com/rds/
+2. AWS EC2 https://aws.amazon.com/ec2/
+3. Local sqlite file (for 1 year history)
 
+### Inspiration:
+![Image of picture1](https://github.com/nsetnik0703/Crypto-Live/blob/master/Proposal/images/Picture1.png)
+![Image of picture2](https://github.com/nsetnik0703/Crypto-Live/blob/master/Proposal/images/Picture2.png)
+![Image of altcoin_prices_combined](https://github.com/nsetnik0703/Crypto-Live/blob/master/Proposal/images/altcoin_prices_combined.png)
