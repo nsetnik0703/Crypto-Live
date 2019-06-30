@@ -1,13 +1,36 @@
-Theme: Cryptocurrency trends featuring Twitter anchors.
+"Crypto-Live"
+Members:
+Nick Setnik
+Donish Cushing
+Naoko Okada
+Priya R.
+Ying Li
 
-Story: Bitcoin Price and Timeline / with Tweet geographical and the count of tweet including “bitcoin”, “crypto”, “cryptocurrency” and whatever related with bitcoin.
-(I assume interesting thing is if bitcoin price moves by tweet like stock price when word-of-mouth effects on the stock price.)
+Synopsis: An app that allows users to explore trends and correlations between the exchange rates of several cryptocurrencies relative to bitcoin, including historical data, and the option to query a custom-built live feed.
 
-Visualization by priority:
-1)Timeline and bitcoin price
+When you visit crypto-live, you are presented with an expansive data feed that displays relevant exchange rates in real time. Here you can look for trends in the market as it changes every miniute and over the previous years.
+But the real magic is found on the next page, where you can request data from a specific time frame between 2 crypto exchanges, and the app will automatically generate visual data based on these parameters. This is useful in discovering relevant shared trends and reveal possible connections.
+In the last comparison page, we prepared a bitcoin correletion data for the real "promising" investers, where you can see 3 less corrlated currencies and their trends.
+We designed this app with the intention of discovering patterns in trends in the sporadic and seemingly unpredictable realm of cryptocurrency and presenting these patterns in a visibly informative way.
 
-2)bitcoin price and count of tweet
+Kaggle - https://www.kaggle.com/philmohun/cryptocurrency-financial-data
+Binance – https://www.binance.com/en
+Coin Market Cap - https://coinmarketcap.com/ (Only for minor cryptocurrencies)
+GitHub - https://github.com/nsetnik0703/Crypto-Live
 
+Current crypto currencies:
+ETH (Ether)
+XRP (Ripple)
+LTC (litecoin)
+BCC (Bitcoin Cash)
+EOS (Eos)
+BNB (Binance Coin)
+And three minor cryptocurrencies. 
 
-((3)geographical data of tweet and bitcoin trade heat map??))
-*Our idea was alerted too much by TA, so we need to kill some of our ideas.
+Database:
+AWS RDS https://aws.amazon.com/rds/
+AWS EC2 https://aws.amazon.com/ec2/
+Local sqlite file (for 1 year history)
+
+Inspiration:
+
