@@ -4,7 +4,12 @@
 ### Members: 
 Nick Setnik, Donish Cushing, Naoko Okada, Priya R., Ying Li
 
-### Synopsis: 
+### Synopsis:
+Cryptocurrecies are highly volatile assets compared to other asset classes. Even "Bitcoin" is capable of volatility in the form of 10x changes in price versus the U.S. dollar. Also, all the criptocurrencies' correlation gradually increases.
+(Bitcoin and volatility: https://www.investopedia.com/articles/investing/052014/why-bitcoins-value-so-volatile.asp)
+
+In that situation where "Cryptocurrency-lovers" should be annoyed for the future investment, we decided offering a useful tool. For the investors of Top 6 cryptocurrencies, we prepared real-time correlation data and historical movements.
+
 An app that allows users to explore trends and correlations between the exchange rates of several cryptocurrencies relative to bitcoin, including historical data, and the option to query a custom-built live feed.
 
 When you visit crypto-live, you are presented with an expansive data feed that displays relevant exchange rates in real time. Here you can look for trends in the market as it changes every miniute and over the previous years.
