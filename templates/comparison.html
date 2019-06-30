@@ -25,9 +25,6 @@
 <!-- Libraries -->
     <!-- d3 JS -->
         <script src="https://d3js.org/d3.v4.min.js"></script>
-    
-        <!-- Multiple.js --> <!-- TO-DO -->
-        <script src=""     >   </script>
 
     <!-- ajax // Plotly -->   
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
@@ -39,11 +36,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      
- 
 </head>
 <body>
-
 <!-- Leaflet js files--> <!-- not currently in use! -->
     <!-- <div id="map"></div>
     <script type="text/javascript" src="static/js/config.js"></script>
@@ -51,20 +45,20 @@
 
 <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #144E75;">
-        <a class="navbar-brand" href="#">Crypto-Live</a>
+        <a class="navbar-brand" href="/">Crypto-Live</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="explore">Explore <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="history">History</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
               </a>
@@ -74,62 +68,65 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled" href="comparison">Comparison</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          </form> -->
         </div>
       </nav>
       <!-- navbar end -->
-<div class="card-deck" style="background: transparent; padding: 20px" >
-  <div class="card">
-    <div class="card-body">
-    <div class="coinmarketcap-currency-widget" data-currencyid="1518" data-base="USD"  data-secondary="BTC" style="width: 30%; height: 10%;margin: 10px;padding: 10px;"></div>
-    <br>
-    <div><h5 class="card-title">MAKER</h5>
-      <p class="card-text">description</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <div class="coinmarketcap-currency-widget" data-currencyid="3602" data-base="USD"  data-secondary="BTC" style="width: 30%; height: 10%;margin: 10px;padding: 10px;"></div>
-      <br>
-      <div><h5 class="card-title">Bitcoin-sv</h5>
-        <p class="card-text">description</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
-    </div>
-  </div>
-  <div class="card">
-      <div class="card-body">
-        <div class="coinmarketcap-currency-widget" data-currencyid="3635" data-base="USD"  data-secondary="BTC" style="width: 30%; height: 10%;margin: 10px;padding: 10px;"></div>
-        <div><h5 class="card-title">Crypto.com Chain</h5>
-          <p class="card-text">description</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
-      </div>
-  </div>
-  </div>
-
-<!-- bootsstrap carddeck end -->
-  <div class="container" style="background: transparent;padding: 50px;">
-       <p style="color: white; font-size:300%;">Less correlated Currencies</p>
-      <div id=correlation>
-        <h2 style="color: white;">Bitcoin correlation</h2>
-        <img src="{{ url_for('static', filename='png/bitcoinCorrelation.png') }}" alt="User Image" style="width: 80%; height: 50%;padding: 10px ;">
-      </div>
-       <br>
-          <div id=whole_history>
-          <h1 style="color: white;">1 year Bitcoin Chart(USD/BTC)</h1>
+      <div class="card-deck" style="background: transparent;" >
+          <div class="card">
+            <div class="card-body"><div class="coinmarketcap-currency-widget" data-currencyid="1518" data-base="USD"  data-secondary="BTC" style="width: 20%; height: 10%;margin: 10px;padding: 10px;"></div>
+            </div>
+            <div class="card-body">
+            <div><h5 class="card-title">MAKER</h5>
+              <!-- <p class="card-text">twitter</p> -->
+              <a class="twitter-timeline" data-height="300" data-theme="dark" href="https://twitter.com/MakerDAO?ref_src=twsrc%5Etfw">Tweets by Maker</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
+            </div>
           </div>
-          <div id="plot" style="width: 80%;"></div>
-          <script src="{{ url_for('static', filename='js/comparison_plotly.js') }}"></script>
-      <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
-  </div>
+          <div class="card">
+            <div class="card-body"><div class="coinmarketcap-currency-widget" data-currencyid="3602" data-base="USD"  data-secondary="BTC" style="width: 20%; height: 10%;margin: 10px;padding: 10px;"></div>
+            </div>
+            <div class="card-body">
+              <div><h5 class="card-title">Bitcoin-sv</h5>
+                <!-- <p class="card-text">twitter</p> -->
+                <a class="twitter-timeline" data-height="300" data-theme="dark" href="https://twitter.com/BitcoinSVNode?ref_src=twsrc%5Etfw">Tweets by BitcoinSVNode</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-body"><div class="coinmarketcap-currency-widget" data-currencyid="3635" data-base="USD"  data-secondary="BTC" style="width: 20%; height: 10%;margin: 10px;padding: 10px;"></div>
+              </div>
+              <div class="card-body">
+                <div><h5 class="card-title">Crypto.com Chain</h5>
+                  <!-- <p class="card-text">description</p> -->
+                  <a class="twitter-timeline" data-height="300" data-theme="dark" href="https://twitter.com/cryptocom?ref_src=twsrc%5Etfw">Tweets by Crypto.com</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div>
+              </div>
+          </div>
+      </div>
+<!-- bootsstrap carddeck end -->
+<div class="container" style="background: transparent;padding: 50px;">
+    <h2 style="color: orange; font: size 200%;font-style:italic;">Choose Less correlated Currencies</h2>
+   <div id=correlation>
+     <h2 style="color: white;">Bitcoin correlation 2018</h2>
+     <img src="{{ url_for('static', filename='png/bitcoinCorrelation.png') }}" alt="User Image" style="width: 80%; height: 50%;padding: 10px ;">
+   </div>
+    <br>
+       <div id=whole_history>
+       <h2 style="color: white;">1 year Bitcoin Chart(USD/BTC)</h2>
+       </div>
+       <div id="plot" style="width: 80%;"></div>
+       <script src="{{ url_for('static', filename='js/comparison_plotly.js') }}"></script>
+   <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+</div>
 </div>
 </body>
 
