@@ -144,7 +144,7 @@ function buildPlot () {
     }
 
     var layout = {
-      title: `Live Closing BTC Prices`,
+      title: `Live BTC Prices`,
       xaxis: {
         range: [startdate, enddate], 
         autorange: true,

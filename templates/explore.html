@@ -11,9 +11,13 @@
             <br>
             <h3>Explore Live Data</h3>
             <br>
+            <p> Are you ready to systematically dig for correlations in short timeframes? Us too! Our app can help you explore correlations between ETH, XRP, BNB, LTC, EOS, and BCC. All values shown are exchange rates relative to bitcoin.</p>
+            <br>
             <!-- create select here -->
             <form>
-            <h6>Enter two BTC currencies to analyze.</h6>
+            
+            <h6>Enter two currencies and two datetimes to analyze.</h6>
+            
             <div class="row">
                 <div class="col">
                 
@@ -23,10 +27,62 @@
                 <input type="text" class="form-control" placeholder="EOSBTC" id="secondCurrency">
                 </div>
                 <div class="col">
+                <input type="text" class="form-control" placeholder="2019-06-26T23:14:04" id="firstDateTime">
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="2019-06-26T23:34:04" id="secondDateTime">
+                </div>
+                <div class="col">
                 <button id="submit" type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
             </form> 
+            <br>
+
+            <div class="row">
+                <div class="col-md-12 justify-content-center">
+                    <div id="lineplot">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <br> -->
+            <div class="row">
+
+                <div class="col-md-12 justify-content-center">
+                        <table id="ufo-table" class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th class="table-head">Symbol 1</th>
+                                    <th class="table-head">Symbol 2</th>
+                                    <th class="table-head">Date/Time</th>
+                                    <th class="table-head">N</th>
+                                    <th class="table-head">Pearson's r</th>
+                                  </tr>
+                                </thead>
+                                <tbody></tbody>
+                              </table>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-12 justify-content-center">
+                            <div id="scatterplot">
+                            </div>
+            </div>
+            </div>
+            <br>
+            <!-- <br> -->
+            <div class="row">
+                <div class="col-md-6 justify-content-center">
+                    <div id="boxplot1">
+                    </div>
+                </div>
+                <div class="col-md-6 justify-content-center">
+                    <div id="boxplot2">
+                    </div>
+                </div>
+            </div>
+        </div>
     
         </div>
     </div>
@@ -42,6 +98,7 @@
     <br>
     <br>
 
-    <script src="{{ url_for('static', filename='js/correlation_plots.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/correlatordo.js') }}"></script>
 
 {% endblock content %}
