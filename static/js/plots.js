@@ -49,7 +49,6 @@ function buildCharts(correctedCurrency) {
                 rangeslider: {range: [startdate, enddate]}, 
                 type: "date"
             },
-
             yaxis: {
                 title: {
                     text: 'Price (USD)'

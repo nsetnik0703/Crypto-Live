@@ -92,18 +92,18 @@ body {
       }
 
     .card-title {
-      font-size:40px;
-      color: #144E75;
+      font-size:30px;
+      color: rgb(255, 255, 255);
     }
       .card-title:hover{
-        color: black;
+        color: rgb(158, 166, 238);
       }
 
     .card-text {
-      color: #72A0C1;
+      color: rgb(211, 229, 241);
     }
       .card-text:hover {
-        color: white;
+        color: rgb(124, 124, 124);
       }
 
 #linePlot{
@@ -113,11 +113,6 @@ body {
         background-attachment: fixed;
         transition: 1s ease-out;
 }
-
-/* .main-svg{
-  background: rgba(255, 255, 255, .5);
-} */
-
 
 #footnote{
   font-family: "Lucida Console", Monaco, monospace;
@@ -205,7 +200,7 @@ body {
 #BNB-price,
 #LTC-price,
 #XRP-price {
-  color: #144E75;
+  color: rgb(198, 219, 233);
   font-size: 20pt;
   transition: .1s;
 }
@@ -220,8 +215,6 @@ body {
   font-size: 21pt;
   transition: .1s;
 }
-
-
 
 
 

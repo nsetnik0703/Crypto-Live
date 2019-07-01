@@ -10,7 +10,7 @@
       <br>
       <h3 style="color:white;">Discovering Associations In The CryptoCurrency Ecosytem</h3>
       <br>
-      <p style="color: white;">This web application serves as a convenient portal by which anyone can explore the valuation of the top six market-valued cryptocurrencies. On the present page, we provide their exchange rates relative to bitcoin (captured at the time the page loaded). In the 'Explore' page, users can select two cryptocurrencies and two datetimes, and our app will automatically generate descriptive statistics and Pearson correlations within those specifications. In the 'History' page, we provide USD valuations and descriptive summaries of each of these cryptocurrencies. In the 'Comparison' page, we provide the USD valuation of bitcoin itself.</p>
+      <p style="color: white;">This is a web application that explores possible short-term correlations between the top six market-valued cryptocurrencies according to their exchange rates. Here, exchange rates relative to bitcoin are displayed from the past 7 days as well as their most recent recorded exchange rate. In the 'Explore' page, the correlations can be observed between two cryptocurrencies by a specific time period with descriptive statistics and Pearson correlations. In the 'History' page, historical trends of USD valuations and descriptive summaries of each cryptocurrency are displayed, based on user choice. In the 'Comparison' page, we provide the USD valuation of bitcoin itself.</p>
     </div>
     <div class="col-md-6">
       
@@ -69,20 +69,34 @@
           </div>
         </row>
         <br>
-    <row>
-      <div class="card">
-        <div class="card-body" id="linePlot">
-        </div>
-      </div>
+       
     </row>
+</div>
+
+<div class="container" style="background: rgba(255,255,255,.85); border: 6px solid #144E75;">
+    <row>
+        <div class="col-md-12">
+          <br>
+          <div id="linePlot">
+          </div>
+          <br>
+        </div>
+</div>
     
 <br>
-    <row>
-  <container>
-      <p style="font-style:italic; color:white;">Last updated:  <span id="timestamp"></span></p>
-    </row>
-  </container>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p style="font-style:italic; color:white;">Last updated:  <span id="timestamp"></span></p>
+      </div>
+      <div class="col-md-4">
+       
+      </div>
+      <div class="col-md-4">
+        </div>
+    </div>
 </div>
+  
 
 
   <script src="static/js/liveplots.js"></script>
